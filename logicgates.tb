@@ -1,0 +1,12 @@
+module logicgates_tb();
+wire out1,out2,out3,out4,out5,out6,out7;
+reg a,b;
+module logicgates dut();
+intial
+begin
+    a = 0 ; b = 0 ;
+#10 a = 0 ; b = 1 ;
+#10 a = 1 ; b = 0 ;
+#10 a = 1 ; b = 1 ;
+#10 $finish;
+end
